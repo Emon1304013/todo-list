@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TODO LIST</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Tailwind Component -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+                },
+            }
+            }
+        }
+        </script>
+         <!-- Tailwind Component -->
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <section class="">
+            <div class="header bg-blue-200 text-center">
+                <p class="h1 font-extrabold p-4">TODO LIST</p>
+            </div>
+            <div class="ml-16">
+                <div class="my-4">
+                    <ol id="task-list" class="list-decimal">
+                        
+                    </ol>
+                </div>
+    
+                <div class="my-16 w-auto">
+                    <textarea name="" id="task-input" cols="20"  rows="2" class="outline outline-offset-2 outline-1" placeholder="Plese type your task to add"></textarea>
+                    <br><br>
+
+                    <button id="add-task-button" class="bg-sky-900 text-white border-2 rounded-lg p-2 px-4 font-bold md:font-extrabold opacity-50" disabled>ADD TASK</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tailwind Component -->
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+         <!-- Tailwind Component -->
+        <script src="js/todo-list.js"></script>
+
+    </body>
+</html>
